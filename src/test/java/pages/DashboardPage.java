@@ -24,13 +24,11 @@ public class DashboardPage extends BaseClass {
 	public AdminPage verifyDashLabel(WebDriver driver) throws Exception{
 
 		System.out.println("Dashboard page start");
-		/* if i comment these two below lines then this method will work
-		 * but in case i uncomment them then test fails here
-		 * 
+		/* if i keep only System.out.println these methods
+		 * then the flow works
+		 */
 		String dashLabel =  dashboardLabel.getText();
 		System.out.println("This label is from verifyDashLabel - " + dashLabel);
-		*
-		*/
 		System.out.println("Dashboard page stop");
 		
 		adminMenu.click();
